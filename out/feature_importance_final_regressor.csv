@@ -1,0 +1,16 @@
+feature,importance_mean,importance_std,task,model
+pricing_ordinal,0.74601,0.05781,regression,XGBoost
+number_of_guests,0.13595,0.00863,regression,XGBoost
+quantity_of_food,0.13134,0.01064,regression,XGBoost
+food_per_guest,0.0554,0.00511,regression,XGBoost
+preparation_method,0.03917,0.00452,regression,XGBoost
+is_sit_down,0.03512,0.00505,regression,XGBoost
+is_high_price,0.02162,0.00367,regression,XGBoost
+geographical_location,0.00749,0.00339,regression,XGBoost
+surplus_units,0.00392,0.00084,regression,XGBoost
+type_of_food,0.00098,0.00166,regression,XGBoost
+guest_scale,0.00059,0.00031,regression,XGBoost
+purchase_history,0.00034,0.00041,regression,XGBoost
+storage_conditions,0.0002,0.00044,regression,XGBoost
+event_type,-0.00027,0.00135,regression,XGBoost
+seasonality,-0.00083,0.00051,regression,XGBoost

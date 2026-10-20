@@ -1,0 +1,139 @@
+{
+  "feature_columns_raw": [
+    "number_of_guests",
+    "quantity_of_food",
+    "food_per_guest",
+    "surplus_units",
+    "pricing_ordinal",
+    "is_high_price",
+    "is_sit_down",
+    "guest_scale",
+    "type_of_food",
+    "event_type",
+    "storage_conditions",
+    "purchase_history",
+    "seasonality",
+    "geographical_location",
+    "preparation_method"
+  ],
+  "design_matrix_columns": [
+    "number_of_guests",
+    "quantity_of_food",
+    "food_per_guest",
+    "surplus_units",
+    "pricing_ordinal",
+    "is_high_price",
+    "is_sit_down",
+    "type_of_food_Baked Goods",
+    "type_of_food_Dairy Products",
+    "type_of_food_Fruits",
+    "type_of_food_Meat",
+    "type_of_food_Vegetables",
+    "event_type_Birthday",
+    "event_type_Corporate",
+    "event_type_Social Gathering",
+    "event_type_Wedding",
+    "storage_conditions_Refrigerated",
+    "storage_conditions_Room Temperature",
+    "purchase_history_Occasional",
+    "purchase_history_Regular",
+    "seasonality_All Seasons",
+    "seasonality_Summer",
+    "seasonality_Winter",
+    "preparation_method_Buffet",
+    "preparation_method_Finger Food",
+    "preparation_method_Sit-down Dinner",
+    "geographical_location_Rural",
+    "geographical_location_Suburban",
+    "geographical_location_Urban",
+    "guest_scale_small",
+    "guest_scale_medium",
+    "guest_scale_large",
+    "guest_scale_very_large"
+  ],
+  "scale_columns": [
+    "number_of_guests",
+    "quantity_of_food",
+    "food_per_guest",
+    "surplus_units"
+  ],
+  "risk_tier_cutpoints": {
+    "Q1": 20.0,
+    "Q3": 35.0
+  },
+  "regressor_name": "XGBoost",
+  "regressor_runner_up": "Random Forest",
+  "regressor_uses_scaling": false,
+  "regressor_best_params": {
+    "colsample_bytree": 0.8344620298315498,
+    "gamma": 1.7283351301438061,
+    "learning_rate": 0.02187819819231757,
+    "max_bin": 256,
+    "max_depth": 5,
+    "min_child_weight": 3,
+    "n_estimators": 341,
+    "reg_alpha": 0.24410836460802626,
+    "reg_lambda": 0.2555859556740416,
+    "subsample": 0.9761834337411657
+  },
+  "classifier_name": "Random Forest",
+  "classifier_runner_up": "XGBoost",
+  "classifier_uses_scaling": false,
+  "classifier_label_map": {
+    "LOW": 0,
+    "MEDIUM": 1,
+    "HIGH": 2
+  },
+  "classifier_best_params": {
+    "n_estimators": 700,
+    "min_samples_leaf": 2,
+    "max_features": 0.5,
+    "max_depth": 16,
+    "class_weight": null
+  },
+  "regression_metrics": {
+    "model": "XGBoost",
+    "stage": "tuned",
+    "cv_R2_mean": 0.9181,
+    "cv_R2_std": 0.0122,
+    "cv_RMSE_mean": 2.9527,
+    "cv_MAE_mean": 2.0287,
+    "test_MAE": 1.887,
+    "test_MSE": 7.3669,
+    "test_RMSE": 2.7142,
+    "test_R2": 0.9316,
+    "test_within_5_units_pct": 89.8148,
+    "fit_time_s": 0.2575
+  },
+  "classification_metrics": {
+    "model": "Random Forest",
+    "stage": "tuned",
+    "cv_macro_F1_mean": 0.8908,
+    "cv_macro_F1_std": 0.0256,
+    "cv_accuracy_mean": 0.9119,
+    "cv_balanced_acc_mean": 0.8833,
+    "test_accuracy": 0.9105,
+    "test_balanced_accuracy": 0.8585,
+    "test_precision_macro": 0.908,
+    "test_recall_macro": 0.8585,
+    "test_macro_F1": 0.8786,
+    "test_weighted_F1": 0.9083,
+    "test_ROC_AUC_ovr": 0.9746,
+    "test_log_loss": 0.3193,
+    "test_HIGH_recall": 0.9492,
+    "fit_time_s": 1.9918
+  },
+  "training_ranges": {
+    "number_of_guests": [
+      207,
+      491
+    ],
+    "quantity_of_food": [
+      280,
+      500
+    ]
+  },
+  "train_rows": 1294,
+  "test_rows": 324,
+  "xgboost_tree_method": "hist"
+}

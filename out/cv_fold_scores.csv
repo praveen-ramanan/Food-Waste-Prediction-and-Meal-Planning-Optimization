@@ -1,0 +1,141 @@
+task,model,stage,fold,score
+regression,Naive (mean),baseline,0,-0.008319991293451512
+regression,Naive (mean),baseline,1,-0.0025545819122019253
+regression,Naive (mean),baseline,2,-0.0022740873919311344
+regression,Naive (mean),baseline,3,-0.014279939925144092
+regression,Naive (mean),baseline,4,-0.0018144095367382818
+regression,Linear Regression,baseline,0,0.7448090973670981
+regression,Linear Regression,baseline,1,0.7324364663506397
+regression,Linear Regression,baseline,2,0.7902347410932845
+regression,Linear Regression,baseline,3,0.7889845087936445
+regression,Linear Regression,baseline,4,0.7783206831631022
+regression,KNN,baseline,0,0.7713008910738978
+regression,KNN,baseline,1,0.7700053994835082
+regression,KNN,baseline,2,0.8166040608092818
+regression,KNN,baseline,3,0.7858827255434834
+regression,KNN,baseline,4,0.788081629167081
+regression,SVR,baseline,0,0.7519665204804971
+regression,SVR,baseline,1,0.703032016058792
+regression,SVR,baseline,2,0.7896331695406026
+regression,SVR,baseline,3,0.7412818501814389
+regression,SVR,baseline,4,0.7535178346794847
+regression,Random Forest,baseline,0,0.8872672749750239
+regression,Random Forest,baseline,1,0.8864292447971893
+regression,Random Forest,baseline,2,0.9297720326935237
+regression,Random Forest,baseline,3,0.897406716420592
+regression,Random Forest,baseline,4,0.9142789889355436
+regression,HistGradientBoosting,baseline,0,0.882972771061578
+regression,HistGradientBoosting,baseline,1,0.8911452265222065
+regression,HistGradientBoosting,baseline,2,0.9257778894901607
+regression,HistGradientBoosting,baseline,3,0.9059275337706248
+regression,HistGradientBoosting,baseline,4,0.907012423808105
+regression,XGBoost,baseline,0,0.8696139596860123
+regression,XGBoost,baseline,1,0.8970908837147602
+regression,XGBoost,baseline,2,0.9096648021476629
+regression,XGBoost,baseline,3,0.8817800286203944
+regression,XGBoost,baseline,4,0.9089457239808825
+regression,Naive (mean),tuned,0,-0.008319991293451512
+regression,Naive (mean),tuned,1,-0.0025545819122019253
+regression,Naive (mean),tuned,2,-0.0022740873919311344
+regression,Naive (mean),tuned,3,-0.014279939925144092
+regression,Naive (mean),tuned,4,-0.0018144095367382818
+regression,Linear Regression,tuned,0,0.7454235447055778
+regression,Linear Regression,tuned,1,0.7323390172588564
+regression,Linear Regression,tuned,2,0.7899800287420058
+regression,Linear Regression,tuned,3,0.7885078829880467
+regression,Linear Regression,tuned,4,0.7790633549285414
+regression,KNN,tuned,0,0.8086770439868406
+regression,KNN,tuned,1,0.8000337022524849
+regression,KNN,tuned,2,0.8193755871441991
+regression,KNN,tuned,3,0.7541565020670565
+regression,KNN,tuned,4,0.7813363524715996
+regression,SVR,tuned,0,0.8176383475059461
+regression,SVR,tuned,1,0.7918863875143979
+regression,SVR,tuned,2,0.8583199444030323
+regression,SVR,tuned,3,0.8265745128058112
+regression,SVR,tuned,4,0.8333641729957635
+regression,Random Forest,tuned,0,0.9010918494759319
+regression,Random Forest,tuned,1,0.8971474712114575
+regression,Random Forest,tuned,2,0.9354647677604297
+regression,Random Forest,tuned,3,0.9038155120184697
+regression,Random Forest,tuned,4,0.9229970080289671
+regression,HistGradientBoosting,tuned,0,0.8918433976704084
+regression,HistGradientBoosting,tuned,1,0.9093866901369001
+regression,HistGradientBoosting,tuned,2,0.9292053296143788
+regression,HistGradientBoosting,tuned,3,0.8981141513043495
+regression,HistGradientBoosting,tuned,4,0.9169843338188509
+regression,XGBoost,tuned,0,0.8995597585598111
+regression,XGBoost,tuned,1,0.9222919005919378
+regression,XGBoost,tuned,2,0.9334906240957042
+regression,XGBoost,tuned,3,0.9090494336644668
+regression,XGBoost,tuned,4,0.9259938635480026
+classification,Dummy (most frequent),baseline,0,0.22506393861892582
+classification,Dummy (most frequent),baseline,1,0.22506393861892582
+classification,Dummy (most frequent),baseline,2,0.22506393861892582
+classification,Dummy (most frequent),baseline,3,0.2239316239316239
+classification,Dummy (most frequent),baseline,4,0.22450728363324765
+classification,Logistic Regression,baseline,0,0.7851571147660533
+classification,Logistic Regression,baseline,1,0.8061432308690534
+classification,Logistic Regression,baseline,2,0.7614451968695511
+classification,Logistic Regression,baseline,3,0.8153374293245533
+classification,Logistic Regression,baseline,4,0.7552901306000992
+classification,KNN,baseline,0,0.8287585507434022
+classification,KNN,baseline,1,0.8450854700854701
+classification,KNN,baseline,2,0.8194369277026103
+classification,KNN,baseline,3,0.8256754220622914
+classification,KNN,baseline,4,0.8138619171798998
+classification,SVM (RBF),baseline,0,0.8412810926987727
+classification,SVM (RBF),baseline,1,0.8709433999101895
+classification,SVM (RBF),baseline,2,0.8266629396501032
+classification,SVM (RBF),baseline,3,0.8815692712876029
+classification,SVM (RBF),baseline,4,0.8018442341971754
+classification,Random Forest,baseline,0,0.9245145720222335
+classification,Random Forest,baseline,1,0.8961298377028714
+classification,Random Forest,baseline,2,0.8562756365228528
+classification,Random Forest,baseline,3,0.8940613026819925
+classification,Random Forest,baseline,4,0.8727250316802556
+classification,HistGradientBoosting,baseline,0,0.9098315440167563
+classification,HistGradientBoosting,baseline,1,0.8781424829280725
+classification,HistGradientBoosting,baseline,2,0.8592121033500343
+classification,HistGradientBoosting,baseline,3,0.8784247173874739
+classification,HistGradientBoosting,baseline,4,0.865597113669304
+classification,XGBoost,baseline,0,0.9153897180762852
+classification,XGBoost,baseline,1,0.8785651314789482
+classification,XGBoost,baseline,2,0.8551638528478539
+classification,XGBoost,baseline,3,0.8859326310575574
+classification,XGBoost,baseline,4,0.8606171606171605
+classification,Dummy (most frequent),tuned,0,0.22506393861892582
+classification,Dummy (most frequent),tuned,1,0.22506393861892582
+classification,Dummy (most frequent),tuned,2,0.22506393861892582
+classification,Dummy (most frequent),tuned,3,0.2239316239316239
+classification,Dummy (most frequent),tuned,4,0.22450728363324765
+classification,Logistic Regression,tuned,0,0.791695030247885
+classification,Logistic Regression,tuned,1,0.8329388093265475
+classification,Logistic Regression,tuned,2,0.7756420674735174
+classification,Logistic Regression,tuned,3,0.8363690634223442
+classification,Logistic Regression,tuned,4,0.7706714041215474
+classification,KNN,tuned,0,0.8478434388753578
+classification,KNN,tuned,1,0.8561197698452601
+classification,KNN,tuned,2,0.827568825353285
+classification,KNN,tuned,3,0.8195141065830721
+classification,KNN,tuned,4,0.8275550352811107
+classification,SVM (RBF),tuned,0,0.89964336792695
+classification,SVM (RBF),tuned,1,0.8686075654251909
+classification,SVM (RBF),tuned,2,0.8321273843012973
+classification,SVM (RBF),tuned,3,0.8749632788438758
+classification,SVM (RBF),tuned,4,0.8379608630855958
+classification,Random Forest,tuned,0,0.9320432700358351
+classification,Random Forest,tuned,1,0.8982205746061167
+classification,Random Forest,tuned,2,0.8575419400507444
+classification,Random Forest,tuned,3,0.895553664838974
+classification,Random Forest,tuned,4,0.8707021847467162
+classification,HistGradientBoosting,tuned,0,0.9197891868421447
+classification,HistGradientBoosting,tuned,1,0.8795041373752018
+classification,HistGradientBoosting,tuned,2,0.8563288563288562
+classification,HistGradientBoosting,tuned,3,0.881505928853755
+classification,HistGradientBoosting,tuned,4,0.8915294791271817
+classification,XGBoost,tuned,0,0.9048099907256092
+classification,XGBoost,tuned,1,0.9034069144871876
+classification,XGBoost,tuned,2,0.8555713151780872
+classification,XGBoost,tuned,3,0.8985632183908047
+classification,XGBoost,tuned,4,0.8693417735282326

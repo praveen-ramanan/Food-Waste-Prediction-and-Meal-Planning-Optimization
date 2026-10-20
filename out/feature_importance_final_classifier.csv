@@ -1,0 +1,16 @@
+feature,importance_mean,importance_std,task,model
+is_high_price,0.13264,0.01416,classification,Random Forest
+quantity_of_food,0.113,0.01525,classification,Random Forest
+pricing_ordinal,0.09189,0.01029,classification,Random Forest
+food_per_guest,0.04616,0.01184,classification,Random Forest
+preparation_method,0.02604,0.00853,classification,Random Forest
+number_of_guests,0.02132,0.00941,classification,Random Forest
+purchase_history,0.01045,0.0045,classification,Random Forest
+is_sit_down,0.00558,0.00507,classification,Random Forest
+surplus_units,0.00122,0.00593,classification,Random Forest
+geographical_location,-0.00037,0.00762,classification,Random Forest
+guest_scale,-0.00143,0.00609,classification,Random Forest
+event_type,-0.003,0.00732,classification,Random Forest
+storage_conditions,-0.00441,0.00746,classification,Random Forest
+type_of_food,-0.00913,0.00746,classification,Random Forest
+seasonality,-0.01389,0.00667,classification,Random Forest

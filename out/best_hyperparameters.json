@@ -1,0 +1,159 @@
+{
+  "regression": {
+    "Linear Regression": {
+      "search": "grid",
+      "candidates": 8,
+      "seconds": 0.3,
+      "best_params": {
+        "alpha": 1
+      },
+      "why": "Interpretable additive baseline; tests how far a linear fit gets (tuned as Ridge)."
+    },
+    "KNN": {
+      "search": "grid",
+      "candidates": 28,
+      "seconds": 0.8,
+      "best_params": {
+        "n_neighbors": 3,
+        "p": 1,
+        "weights": "uniform"
+      },
+      "why": "Non-parametric; bookings with similar guests/quantity/tier should waste alike."
+    },
+    "SVR": {
+      "search": "grid",
+      "candidates": 48,
+      "seconds": 4.0,
+      "best_params": {
+        "C": 30,
+        "epsilon": 0.5,
+        "gamma": "scale"
+      },
+      "why": "RBF kernel captures smooth non-linearity; epsilon-insensitive loss resists label noise."
+    },
+    "Random Forest": {
+      "search": "random",
+      "candidates": 25,
+      "seconds": 20.8,
+      "best_params": {
+        "n_estimators": 700,
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_depth": 10
+      },
+      "why": "Bagged trees model the pricing x service interaction without manual terms."
+    },
+    "HistGradientBoosting": {
+      "search": "random",
+      "candidates": 40,
+      "seconds": 23.5,
+      "best_params": {
+        "l2_regularization": 5.140540420871591,
+        "learning_rate": 0.06792740114629246,
+        "max_depth": 3,
+        "max_iter": 445,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 6
+      },
+      "why": "Histogram-binned gradient boosting; fast, strong on tabular data with few distinct values."
+    },
+    "XGBoost": {
+      "search": "random",
+      "candidates": 50,
+      "seconds": 10.0,
+      "best_params": {
+        "colsample_bytree": 0.8344620298315498,
+        "gamma": 1.7283351301438061,
+        "learning_rate": 0.02187819819231757,
+        "max_bin": 256,
+        "max_depth": 5,
+        "min_child_weight": 3,
+        "n_estimators": 341,
+        "reg_alpha": 0.24410836460802626,
+        "reg_lambda": 0.2555859556740416,
+        "subsample": 0.9761834337411657
+      },
+      "why": "Regularised gradient boosting with histogram splits; usually the strongest tabular learner."
+    }
+  },
+  "classification": {
+    "Logistic Regression": {
+      "search": "grid",
+      "candidates": 16,
+      "seconds": 0.9,
+      "best_params": {
+        "C": 30,
+        "class_weight": null
+      },
+      "why": "Linear, calibrated probabilities; interpretable multinomial baseline."
+    },
+    "KNN": {
+      "search": "grid",
+      "candidates": 28,
+      "seconds": 0.7,
+      "best_params": {
+        "n_neighbors": 5,
+        "p": 1,
+        "weights": "uniform"
+      },
+      "why": "Instance-based; similar bookings should share a tier."
+    },
+    "SVM (RBF)": {
+      "search": "grid",
+      "candidates": 48,
+      "seconds": 9.8,
+      "best_params": {
+        "C": 10,
+        "class_weight": null,
+        "gamma": "scale"
+      },
+      "why": "Maximum-margin non-linear boundaries between adjacent tiers."
+    },
+    "Random Forest": {
+      "search": "random",
+      "candidates": 25,
+      "seconds": 39.8,
+      "best_params": {
+        "n_estimators": 700,
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_depth": 16,
+        "class_weight": null
+      },
+      "why": "Robust ensemble; class weighting can lift the minority LOW tier."
+    },
+    "HistGradientBoosting": {
+      "search": "random",
+      "candidates": 40,
+      "seconds": 73.7,
+      "best_params": {
+        "class_weight": "balanced",
+        "l2_regularization": 2.902652141826388,
+        "learning_rate": 0.06261435181296006,
+        "max_depth": 3,
+        "max_iter": 447,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 43
+      },
+      "why": "Histogram-binned gradient boosting with native multi-class loss."
+    },
+    "XGBoost": {
+      "search": "random",
+      "candidates": 50,
+      "seconds": 25.1,
+      "best_params": {
+        "colsample_bytree": 0.6629794526009424,
+        "gamma": 0.4404820951310966,
+        "learning_rate": 0.11231922279490145,
+        "max_bin": 256,
+        "max_depth": 4,
+        "min_child_weight": 4,
+        "n_estimators": 860,
+        "reg_alpha": 0.004415462397789295,
+        "reg_lambda": 3.889273285058361,
+        "subsample": 0.7546941385202149
+      },
+      "why": "Regularised multi-class boosting (softprob) with histogram splits."
+    }
+  }
+}

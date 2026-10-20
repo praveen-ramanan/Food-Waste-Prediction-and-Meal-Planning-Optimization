@@ -1,0 +1,8 @@
+model,cv_macro_F1_baseline,cv_macro_F1_tuned,test_macro_F1_baseline,test_macro_F1_tuned,cv_macro_F1_gain,test_macro_F1_gain
+Dummy (most frequent),0.2247,0.2247,0.2222,0.2222,0.0,0.0
+HistGradientBoosting,0.8782,0.8857,0.8415,0.8634,0.0075,0.0219
+KNN,0.8266,0.8357,0.7974,0.798,0.0091,0.0006
+Logistic Regression,0.7847,0.8015,0.7703,0.7539,0.0168,-0.0164
+Random Forest,0.8887,0.8908,0.8639,0.8786,0.0021,0.0147
+SVM (RBF),0.8445,0.8627,0.8214,0.8384,0.0182,0.017
+XGBoost,0.8791,0.8863,0.8719,0.8893,0.0072,0.0174

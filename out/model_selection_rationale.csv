@@ -1,0 +1,15 @@
+task,model,rationale
+regression,Naive (mean),Floor: any useful model must beat predicting the training mean.
+regression,Linear Regression,Interpretable additive baseline; tests how far a linear fit gets (tuned as Ridge).
+regression,KNN,Non-parametric; bookings with similar guests/quantity/tier should waste alike.
+regression,SVR,RBF kernel captures smooth non-linearity; epsilon-insensitive loss resists label noise.
+regression,Random Forest,Bagged trees model the pricing x service interaction without manual terms.
+regression,HistGradientBoosting,"Histogram-binned gradient boosting; fast, strong on tabular data with few distinct values."
+regression,XGBoost,Regularised gradient boosting with histogram splits; usually the strongest tabular learner.
+classification,Dummy (most frequent),Floor: always predicts the majority tier (MEDIUM).
+classification,Logistic Regression,"Linear, calibrated probabilities; interpretable multinomial baseline."
+classification,KNN,Instance-based; similar bookings should share a tier.
+classification,SVM (RBF),Maximum-margin non-linear boundaries between adjacent tiers.
+classification,Random Forest,Robust ensemble; class weighting can lift the minority LOW tier.
+classification,HistGradientBoosting,Histogram-binned gradient boosting with native multi-class loss.
+classification,XGBoost,Regularised multi-class boosting (softprob) with histogram splits.

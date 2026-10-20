@@ -1,0 +1,34 @@
+feature,gain
+is_high_price,9613.448
+pricing_ordinal,2689.613
+quantity_of_food,375.824
+number_of_guests,292.812
+is_sit_down,288.376
+preparation_method_Sit-down Dinner,212.213
+guest_scale_very_large,190.652
+food_per_guest,158.508
+guest_scale_small,142.309
+preparation_method_Buffet,104.288
+guest_scale_medium,97.815
+preparation_method_Finger Food,96.027
+surplus_units,94.22
+geographical_location_Urban,69.617
+geographical_location_Rural,44.169
+type_of_food_Vegetables,30.978
+guest_scale_large,29.993
+type_of_food_Dairy Products,26.231
+event_type_Social Gathering,24.137
+purchase_history_Regular,24.013
+purchase_history_Occasional,23.826
+event_type_Corporate,23.339
+geographical_location_Suburban,23.167
+event_type_Birthday,21.51
+storage_conditions_Room Temperature,19.901
+seasonality_Summer,19.307
+storage_conditions_Refrigerated,18.87
+event_type_Wedding,17.695
+seasonality_All Seasons,17.65
+type_of_food_Meat,15.707
+seasonality_Winter,14.284
+type_of_food_Fruits,13.599
+type_of_food_Baked Goods,9.774

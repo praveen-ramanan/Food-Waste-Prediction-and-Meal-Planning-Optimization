@@ -1,0 +1,9 @@
+id,issue,finding,action
+DQ-01,Missing values,0 across all columns,No imputation required
+DQ-02,Duplicate records,164 exact duplicates,Remove all; impact quantified
+DQ-03,Feature-duplicate conflicts,"94 rows, identical features, differing target",Retain; used to bound attainable R2
+DQ-04,Outliers,10 target values with |z|>3,Retain; influence tested
+DQ-05,Cross-field logic,14 records with quantity < guests,Flag as unit ambiguity; retain
+DQ-06,Encoding,UTF-8 BOM on header,Read with utf-8-sig; snake_case rename
+DQ-07,Value granularity,61 combinations; 86.2% round targets,Recorded as a limitation
+DQ-08,Class balance,max imbalance 7.65x,Note for effect-size interpretation

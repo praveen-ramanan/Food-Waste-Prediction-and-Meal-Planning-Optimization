@@ -1,0 +1,10 @@
+feature,chi2,dof,p_value,cramers_v,association
+pricing,783.55,4,2.8141317992033377e-168,0.549,Strong
+guest_scale,386.84,6,1.885302277294786e-80,0.384,Strong
+preparation_method,267.02,4,1.403125271680847e-56,0.319,Strong
+geographical_location,15.8,4,0.003292782439577664,0.068,Weak/none
+event_type,17.03,6,0.009179469716560352,0.065,Weak/none
+storage_conditions,6.38,2,0.04117150758395355,0.058,Weak/none
+seasonality,11.16,4,0.0248127244857656,0.053,Weak/none
+purchase_history,2.91,2,0.23298568747538917,0.027,Weak/none
+type_of_food,4.09,8,0.8493443885496648,0.0,Weak/none

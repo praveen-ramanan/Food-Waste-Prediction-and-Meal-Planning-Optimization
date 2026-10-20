@@ -1,0 +1,8 @@
+model,stage,cv_macro_F1_mean,cv_macro_F1_std,cv_accuracy_mean,cv_balanced_acc_mean,test_accuracy,test_balanced_accuracy,test_precision_macro,test_recall_macro,test_macro_F1,test_weighted_F1,test_ROC_AUC_ovr,test_log_loss,test_HIGH_recall,fit_time_s
+Dummy (most frequent),baseline,0.2247,0.0005,0.5085,0.3333,0.5,0.3333,0.1667,0.3333,0.2222,0.3333,0.5,18.0218,0.0,0.001
+Logistic Regression,baseline,0.7847,0.0237,0.8176,0.7672,0.7994,0.7491,0.809,0.7491,0.7703,0.7962,0.9207,0.4597,0.8644,0.0943
+KNN,baseline,0.8266,0.0106,0.8532,0.8197,0.8364,0.7841,0.815,0.7841,0.7974,0.8353,0.9185,1.301,0.8559,0.0136
+SVM (RBF),baseline,0.8445,0.0291,0.8701,0.831,0.8519,0.803,0.8483,0.803,0.8214,0.8497,0.938,0.3823,0.8898,0.2995
+Random Forest,baseline,0.8887,0.0231,0.9119,0.8824,0.9012,0.846,0.8891,0.846,0.8639,0.8991,0.9672,0.3652,0.9407,0.2479
+HistGradientBoosting,baseline,0.8782,0.0174,0.8995,0.8764,0.8858,0.8302,0.8559,0.8302,0.8415,0.8842,0.9724,0.3673,0.9407,2.4207
+XGBoost,baseline,0.8791,0.0213,0.9018,0.878,0.9043,0.8599,0.8869,0.8599,0.8719,0.903,0.9713,0.2984,0.9492,0.1435

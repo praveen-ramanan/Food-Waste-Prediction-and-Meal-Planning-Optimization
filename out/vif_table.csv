@@ -1,0 +1,4 @@
+pair,r,vif_approx
+number_of_guests + quantity_of_food,0.791,2.67
+food_per_guest + surplus_units,0.938,8.37
+pricing_ordinal + is_high_price,0.866,4.01

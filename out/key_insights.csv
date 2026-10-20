@@ -1,0 +1,11 @@
+id,insight,evidence
+I-1,Pricing tier is the dominant driver of waste,eta2=0.5852
+I-2,Guest count and quantity of food correlate strongly with waste,"r_guests=0.65, r_quantity=0.641"
+I-3,Pricing and preparation method interact (rank reversal),"F=11.54, p=3.28e-09"
+I-4,The guest-count effect is tier-dependent,"slopes={'Low': 0.087, 'Moderate': 0.061, 'High': 0.042}"
+I-5,Error variance is not constant across tiers,"residual_sd={'High': 4.16, 'Low': 2.2, 'Moderate': 2.87}"
+I-6,Attainable accuracy is bounded by irreducible label noise,implied_R2_ceiling=0.9328
+I-7,Duplicates were a source of potential train/test leakage,164 exact duplicates removed before splitting
+I-8,The dataset has limited value granularity (records logged in rounded units),61 guest/quantity combinations; 86.2% of targets divisible by 5
+I-9,Risk tiers are not evenly distributed,"train={'MEDIUM': 0.509, 'HIGH': 0.342, 'LOW': 0.15}, test={'MEDIUM': 0.5, 'HIGH': 0.364, 'LOW': 0.136}"
+I-10,Train/test target distributions are statistically indistinguishable,KS p=0.635

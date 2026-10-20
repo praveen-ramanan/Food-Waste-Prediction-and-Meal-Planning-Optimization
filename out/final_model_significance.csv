@@ -1,0 +1,3 @@
+task,metric,best_model,runner_up,mean_a,mean_b,mean_diff,t,p_value,folds,a_wins
+regression,r2,XGBoost,Random Forest,0.918155,0.912999,0.005157,1.15264,0.26836,15,11
+classification,f1_macro,Random Forest,XGBoost,0.886498,0.883824,0.002674,0.405528,0.691219,15,8

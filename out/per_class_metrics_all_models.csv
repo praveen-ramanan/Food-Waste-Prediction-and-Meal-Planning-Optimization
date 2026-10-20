@@ -1,0 +1,25 @@
+model,tier,precision,recall,f1
+Dummy (most frequent),LOW,0.0,0.0,0.0
+Dummy (most frequent),MEDIUM,0.5,1.0,0.6667
+Dummy (most frequent),HIGH,0.0,0.0,0.0
+Logistic Regression,LOW,0.7222,0.5909,0.65
+Logistic Regression,MEDIUM,0.784,0.784,0.784
+Logistic Regression,HIGH,0.8016,0.8559,0.8279
+KNN,LOW,0.6829,0.6364,0.6588
+KNN,MEDIUM,0.8198,0.8704,0.8443
+KNN,HIGH,0.9189,0.8644,0.8908
+SVM (RBF),LOW,0.8438,0.6136,0.7105
+SVM (RBF),MEDIUM,0.8466,0.9198,0.8817
+SVM (RBF),HIGH,0.931,0.9153,0.9231
+Random Forest,LOW,0.8824,0.6818,0.7692
+Random Forest,MEDIUM,0.8844,0.9444,0.9134
+Random Forest,HIGH,0.9573,0.9492,0.9532
+HistGradientBoosting,LOW,0.6909,0.8636,0.7677
+HistGradientBoosting,MEDIUM,0.9139,0.8519,0.8818
+HistGradientBoosting,HIGH,0.9407,0.9407,0.9407
+XGBoost,LOW,0.8919,0.75,0.8148
+XGBoost,MEDIUM,0.8844,0.9444,0.9134
+XGBoost,HIGH,0.9561,0.9237,0.9397
+XGBoost regressor + cut points,LOW,0.507,0.8182,0.6261
+XGBoost regressor + cut points,MEDIUM,0.8592,0.7531,0.8026
+XGBoost regressor + cut points,HIGH,0.955,0.8983,0.9258
